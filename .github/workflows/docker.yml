@@ -1,6 +1,16 @@
 name: Build and Publish Docker
-  on: [push]
-  jobs:
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:   # 下列文件的变更不触发部署，可以自行添加
+      - README.md
+      - CODE_OF_CONDUCT.md
+      - CONTRIBUTING.md
+      - LICENSE
+      - .gitignore
+      - docs
+jobs:
   push_to_registry:
     name: Push Docker image to GitHub Packages
     runs-on: ubuntu-latest
