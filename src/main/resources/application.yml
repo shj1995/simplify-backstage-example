@@ -1,0 +1,43 @@
+debug: true
+server:
+  port: 8080
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  datasource:
+    url: jdbc:mysql://118.25.157.226:3306/simple_example_web?autoreconnect=true&useSSL=false
+    username: "root"
+    password: "123456"
+    druid:
+      url: jdbc:mysql://118.25.157.226:3306/simple_example_web?autoreconnect=true&useSSL=false
+      username: "root"
+      password: "123456"
+      driver-class-name:  com.mysql.cj.jdbc.Driver
+      initial-size: 5
+      max-active: 5
+      min-idle: 5
+      filters: stat,slf4j
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+jwt:
+  expiration: 7500000000
+  token: Authorization
+  secret: secret
+simple:
+  storage:
+    local:
+      dir-path: /data/work/storage/simple/local
+    root: /data/work/storage/simple
+    temp: /data/work/storage/simple/temp
+    permanent: /data/work/storage/simple/local
+
