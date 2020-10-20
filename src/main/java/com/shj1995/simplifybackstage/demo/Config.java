@@ -8,8 +8,6 @@ package com.shj1995.simplifybackstage.demo;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
@@ -19,8 +17,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.shj1995.simplifybackstage")
-@EnableJpaAuditing
+//@EnableJpaAuditing
 @EnableConfigurationProperties
-@EnableJpaRepositories
+//@EnableJpaRepositories
 public class Config {
 }
