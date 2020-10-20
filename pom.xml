@@ -60,12 +60,27 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>github-snapshot</id>
+            <name>GitHub snapshot</name>
+            <url>https://maven.pkg.github.com/shj1995/simplify-backstage/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+        <repository>
+            <id>github-release</id>
+            <name>GitHub release</name>
+            <url>https://maven.pkg.github.com/shj1995/simplify-backstage/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
     <repositories>
         <repository>
             <id>github</id>
             <name>GitHub</name>
             <url>https://maven.pkg.github.com/shj1995/simplify-backstage/</url>
             <snapshots><enabled>true</enabled></snapshots>
+            <releases><enabled>true</enabled></releases>
         </repository>
     </repositories>
 </project>

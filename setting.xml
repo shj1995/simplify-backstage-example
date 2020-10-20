@@ -5,37 +5,15 @@
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <pluginGroups>
     </pluginGroups>
-    <activeProfiles>
-        <activeProfile>github</activeProfile>
-    </activeProfiles>
     <proxies>
     </proxies>
     <servers>
         <server>
             <id>github</id>
             <username>shj1995</username>
-            <password>912c7578958e24530d0737aa6d5bf37189e4613b</password>
+            <password>475db792e294c2b0a45eb9bc923d2dd562397a4e</password>
         </server>
     </servers>
-
-    <profiles>
-        <profile>
-            <id>github</id>
-            <repositories>
-                <repository>
-                    <id>central</id>
-                    <url>https://repo1.maven.org/maven2</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
-                </repository>
-                <repository>
-                    <id>github</id>
-                    <name>GitHub OWNER Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/shj1995/simplify-backstage</url>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
 </settings>
 
 
