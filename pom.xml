@@ -30,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>com.shj1995.simplifybackstage</groupId>
-            <artifactId>simplify-backstage-core</artifactId>
+            <artifactId>simplify-backstage-toolkit</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
